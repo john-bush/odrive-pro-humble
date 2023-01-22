@@ -46,16 +46,16 @@ struct Msg
         MSG_START_ANTICOGGING,          // 0x010: Start Anticogging
         MSG_SET_TRAJ_VEL_LIMIT,         // 0x011: Set Traj Vel Limit
         MSG_SET_TRAJ_ACCEL_LIMITS,      // 0x012: Set Traj Accel/Decel Limits
-        MSG_SET_TRAJ_INERTIA            // 0x013: Set Trajectory Inertia
+        MSG_SET_TRAJ_INERTIA,            // 0x013: Set Trajectory Inertia
         MSG_GET_IQ,                     // 0x014: Get IQ (Setpoint / Measured)
         MSG_GET_TEMPERATURE,            // 0x015: Get Temperature (Inverter / Motor)
         MSG_REBOOT_ODRIVE,              // 0x016: Reboot ODrive
         MSG_GET_VBUS_VOLTAGE,           // 0x017: Get Bus Voltage and Current
         MSG_CLEAR_ERRORS,               // 0x018: Clear Errors
         MSG_SET_ABSOLUTE_POS,           // 0x019: Set Absolute Position
-        MSG_SET_POSITION_GAIN           // 0x01A: Set Position Gain
-        MSG_SET_VEL_GAINS               // 0x01B: Set Vel / Vel Integrator Gain
-        MSG_CO_HEARTBEAT_CMD = 0x700,   // CANOpen NMT Heartbeat  SEND
+        MSG_SET_POSITION_GAIN,           // 0x01A: Set Position Gain
+        MSG_SET_VEL_GAINS,               // 0x01B: Set Vel / Vel Integrator Gain
+        MSG_CO_HEARTBEAT_CMD = 0x700   // CANOpen NMT Heartbeat  SEND
     };
 };
 
